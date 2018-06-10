@@ -1,3 +1,12 @@
-<p>
-  simple-form works!
-</p>
+<form #calcForm="ngForm">
+<input name="fieldOne" [(ngModel)]="text1" #fieldOne="ngModel" required>
++
+<input name="fieldTwo" [(ngModel)]="text2" #fieldTwo="ngModel" required>
+<button (click)="addAndShow()" [disabled]="calcForm.invalid">CALC</button>
+<div>{{result}}</div>
+<div>
+  <span *ngIf="fieldOne.invalid" class="my-invalid">左側のフィールドが空白です</span>
+  <br>
+  <span *ngIf="fieldTwo.invalid" class="my-invalid">右側のフィールドが空白です</span>
+</div>
+</form>
