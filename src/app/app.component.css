@@ -3,3 +3,27 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 350%;
 }
+
+a {
+    padding: 10px;
+    margin-right: 4px;
+    background-color: darkolivegreen;
+    color: khaki;
+    text-decoration: none;
+    border: solid 1px darkolivegreen;
+    border-bottom: solid 1px khaki;
+}
+a:link, a:visited, a:hover {
+    color: khaki;
+}
+a.selected-item {
+    color: darkolivegreen;
+    background-color: khaki;
+}
+
+div {
+    padding: 50px;
+    background-color: khaki;
+    color: darkolivegreen;
+    border: solid 1px darkolivegreen;
+}
