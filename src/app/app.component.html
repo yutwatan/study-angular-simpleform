@@ -1,4 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<!-- 
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -19,19 +20,26 @@
 </ul>
 
 <hr>
+-->
 
-<!-- SimpleFormComponent -->
+<nav>
+  <a *ngFor="let path of paths" routerLinkActive="selected-item" [routerLink]="path.pathname">{{path.title}}</a>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- 
 <h2>SimpleFormComponent</h2>
 <app-simple-form></app-simple-form>
 
 <hr>
 
-<!-- BetterFormComponent -->
 <h2>BetterFormComponent</h2>
 <app-better-form></app-better-form>
 
 <hr>
 
-<!-- ControlsComponent -->
 <h2>ControlsComponent</h2>
 <app-controls></app-controls>
+-->
